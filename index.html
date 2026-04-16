@@ -7,284 +7,200 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
-  :root {
-    --green-deep: #1a3c2e;
-    --green-mid: #2d6a4f;
-    --green-accent: #52b788;
-    --green-light: #d8f3dc;
-    --cream: #faf8f3;
-    --cream-dark: #f0ebe0;
-    --text: #1c1c1c;
-    --text-muted: #6b6457;
-    --gold: #c9a84c;
-    --gold-light: #f5e9c8;
-    --amber: #d97706;
-    --blue: #2563a8;
-    --blue-light: #dbeafe;
-    --coral: #b84c3a;
-    --coral-light: #fde8e4;
-    --purple: #5b3f8e;
-    --purple-light: #ede9fa;
-    --teal-light: #ccfbf1;
-    --teal: #0d9488;
-    --border: #e2ddd6;
-  }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body {
-    background: var(--cream);
-    color: var(--text);
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 300;
-    line-height: 1.7;
-  }
+:root {
+  --green-deep: #1a3c2e;
+  --green-mid: #2d6a4f;
+  --green-accent: #52b788;
+  --green-light: #d8f3dc;
+  --cream: #faf8f3;
+  --cream-dark: #f0ebe0;
+  --text: #1c1c1c;
+  --text-muted: #6b6457;
+  --gold: #c9a84c;
+  --gold-light: #f5e9c8;
+  --amber: #d97706;
+  --blue: #2563a8;
+  --blue-light: #dbeafe;
+  --coral: #b84c3a;
+  --coral-light: #fde8e4;
+  --purple: #5b3f8e;
+  --purple-light: #ede9fa;
+  --teal-light: #ccfbf1;
+  --teal: #0d9488;
+  --border: #e2ddd6;
+  --sasha: #2d6a4f;
+  --sasha-light: #d8f3dc;
+  --solya: #2563a8;
+  --solya-light: #dbeafe;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: var(--cream); color: var(--text); font-family: 'DM Sans', sans-serif; font-weight: 300; line-height: 1.7; }
 
-  /* HERO */
-  .hero {
-    background: var(--green-deep);
-    color: #fff;
-    padding: 4rem 2rem 3rem;
-    position: relative;
-    overflow: hidden;
-  }
-  .hero::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(ellipse at 80% 50%, rgba(82,183,136,0.18) 0%, transparent 60%),
-                radial-gradient(ellipse at 10% 80%, rgba(201,168,76,0.12) 0%, transparent 50%);
-  }
-  .hero-inner {
-    max-width: 900px;
-    margin: 0 auto;
-    position: relative;
-    z-index: 1;
-  }
-  .hero-label {
-    font-size: 11px;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: var(--green-accent);
-    margin-bottom: 1rem;
-    font-weight: 500;
-  }
-  .hero h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(2.2rem, 5vw, 3.6rem);
-    font-weight: 600;
-    line-height: 1.15;
-    margin-bottom: 0.5rem;
-  }
-  .hero h1 em {
-    font-style: italic;
-    color: var(--green-accent);
-  }
-  .hero-sub {
-    font-size: 1rem;
-    color: rgba(255,255,255,0.65);
-    margin-top: 0.75rem;
-    font-weight: 300;
-  }
-  .hero-meta {
-    display: flex;
-    gap: 1.5rem;
-    margin-top: 2rem;
-    flex-wrap: wrap;
-  }
-  .hero-pill {
-    background: rgba(255,255,255,0.1);
-    border: 1px solid rgba(255,255,255,0.2);
-    border-radius: 100px;
-    padding: 6px 16px;
-    font-size: 13px;
-    color: rgba(255,255,255,0.85);
-    display: flex;
-    align-items: center;
-    gap: 6px;
-  }
-  .hero-pill .dot {
-    width: 6px; height: 6px; border-radius: 50%;
-    background: var(--green-accent);
-    flex-shrink: 0;
-  }
+/* HERO */
+.hero { background: var(--green-deep); color: #fff; padding: 4rem 2rem 3rem; position: relative; overflow: hidden; }
+.hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 80% 50%, rgba(82,183,136,0.18) 0%, transparent 60%), radial-gradient(ellipse at 10% 80%, rgba(201,168,76,0.12) 0%, transparent 50%); }
+.hero-inner { max-width: 900px; margin: 0 auto; position: relative; z-index: 1; }
+.hero-label { font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--green-accent); margin-bottom: 1rem; font-weight: 500; }
+.hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(2.2rem, 5vw, 3.6rem); font-weight: 600; line-height: 1.15; margin-bottom: 0.5rem; }
+.hero h1 em { font-style: italic; color: var(--green-accent); }
+.hero-sub { font-size: 1rem; color: rgba(255,255,255,0.65); margin-top: 0.75rem; font-weight: 300; }
+.hero-meta { display: flex; gap: 1.5rem; margin-top: 2rem; flex-wrap: wrap; }
+.hero-pill { background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); border-radius: 100px; padding: 6px 16px; font-size: 13px; color: rgba(255,255,255,0.85); display: flex; align-items: center; gap: 6px; }
+.hero-pill .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--green-accent); flex-shrink: 0; }
 
-  /* VISA NOTICE */
-  .notice-wrap { max-width: 900px; margin: 2rem auto; padding: 0 1.5rem; }
-  .notice {
-    background: linear-gradient(135deg, #fff9ee, #f0fdf4);
-    border: 1px solid var(--gold);
-    border-radius: 12px;
-    padding: 1rem 1.25rem;
-    display: flex;
-    gap: 12px;
-    align-items: flex-start;
-  }
-  .notice-icon {
-    font-size: 20px;
-    flex-shrink: 0;
-    margin-top: 2px;
-  }
-  .notice-text { font-size: 13.5px; color: var(--text); line-height: 1.6; }
-  .notice-text strong { font-weight: 500; color: var(--green-deep); }
+/* VISA NOTICE */
+.notice-wrap { max-width: 900px; margin: 2rem auto; padding: 0 1.5rem; }
+.notice { background: linear-gradient(135deg, #fff9ee, #f0fdf4); border: 1px solid var(--gold); border-radius: 12px; padding: 1rem 1.25rem; display: flex; gap: 12px; align-items: flex-start; }
+.notice-icon { font-size: 20px; flex-shrink: 0; margin-top: 2px; }
+.notice-text { font-size: 13.5px; color: var(--text); line-height: 1.6; }
+.notice-text strong { font-weight: 500; color: var(--green-deep); }
 
-  /* MAIN CONTENT */
-  .container { max-width: 900px; margin: 0 auto; padding: 0 1.5rem 4rem; }
+/* MAIN CONTENT */
+.container { max-width: 900px; margin: 0 auto; padding: 0 1.5rem 4rem; }
 
-  /* SECTION HEADERS */
-  .section-header {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin: 2.5rem 0 1rem;
-  }
-  .section-number {
-    width: 28px; height: 28px;
-    background: var(--green-mid);
-    color: #fff;
-    border-radius: 50%;
-    display: flex; align-items: center; justify-content: center;
-    font-size: 12px; font-weight: 500;
-    flex-shrink: 0;
-  }
-  .section-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.4rem;
-    font-weight: 600;
-    color: var(--green-deep);
-  }
+/* SECTION HEADERS */
+.section-header { display: flex; align-items: center; gap: 10px; margin: 2.5rem 0 1rem; }
+.section-number { width: 28px; height: 28px; background: var(--green-mid); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 500; flex-shrink: 0; }
+.section-title { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 600; color: var(--green-deep); }
 
-  /* TABLES */
-  .table-wrap { overflow-x: auto; border-radius: 12px; border: 1px solid var(--border); }
-  table { width: 100%; border-collapse: collapse; font-size: 13.5px; min-width: 700px; }
-  thead th {
-    background: var(--green-deep);
-    color: rgba(255,255,255,0.85);
-    font-size: 11px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    font-weight: 500;
-    padding: 10px 12px;
-    text-align: left;
-    white-space: nowrap;
-  }
-  tbody tr { border-bottom: 1px solid var(--border); }
-  tbody tr:last-child { border-bottom: none; }
-  tbody tr:nth-child(even) { background: rgba(0,0,0,0.018); }
-  tbody tr:hover { background: #f0fdf4; transition: background 0.15s; }
-  td { padding: 11px 12px; vertical-align: top; color: var(--text); }
-  td:first-child { font-weight: 500; color: var(--text-muted); font-size: 12.5px; white-space: nowrap; }
-  td strong { font-weight: 500; color: var(--green-deep); }
+/* TABLES */
+.table-wrap { overflow-x: auto; border-radius: 12px; border: 1px solid var(--border); }
+table { width: 100%; border-collapse: collapse; font-size: 13.5px; min-width: 700px; }
+thead th { background: var(--green-deep); color: rgba(255,255,255,0.85); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 500; padding: 10px 12px; text-align: left; white-space: nowrap; }
+tbody tr { border-bottom: 1px solid var(--border); }
+tbody tr:last-child { border-bottom: none; }
+tbody tr:nth-child(even) { background: rgba(0,0,0,0.018); }
+tbody tr:hover { background: #f0fdf4; transition: background 0.15s; }
+td { padding: 11px 12px; vertical-align: top; color: var(--text); }
+td:first-child { font-weight: 500; color: var(--text-muted); font-size: 12.5px; white-space: nowrap; }
+td strong { font-weight: 500; color: var(--green-deep); }
 
-  /* BADGES */
-  .badge {
-    display: inline-block;
-    font-size: 11px;
-    padding: 2px 8px;
-    border-radius: 100px;
-    font-weight: 400;
-    margin: 1px 2px 1px 0;
-  }
-  .b-green { background: var(--green-light); color: var(--green-mid); }
-  .b-teal { background: var(--teal-light); color: var(--teal); }
-  .b-blue { background: var(--blue-light); color: var(--blue); }
-  .b-amber { background: #fef3c7; color: var(--amber); }
-  .b-coral { background: var(--coral-light); color: var(--coral); }
-  .b-gray { background: var(--cream-dark); color: var(--text-muted); }
-  .b-purple { background: var(--purple-light); color: var(--purple); }
-  .b-gold { background: var(--gold-light); color: #92660f; }
+/* BADGES */
+.badge { display: inline-block; font-size: 11px; padding: 2px 8px; border-radius: 100px; font-weight: 400; margin: 1px 2px 1px 0; }
+.b-green { background: var(--green-light); color: var(--green-mid); }
+.b-teal { background: var(--teal-light); color: var(--teal); }
+.b-blue { background: var(--blue-light); color: var(--blue); }
+.b-amber { background: #fef3c7; color: var(--amber); }
+.b-coral { background: var(--coral-light); color: var(--coral); }
+.b-gray { background: var(--cream-dark); color: var(--text-muted); }
+.b-purple { background: var(--purple-light); color: var(--purple); }
+.b-gold { background: var(--gold-light); color: #92660f; }
 
-  /* BOOKING CELL */
-  .book-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 6px;
-    margin: 3px 0;
-    font-size: 13px;
-  }
-  .book-dot {
-    width: 6px; height: 6px; border-radius: 50%;
-    flex-shrink: 0;
-    margin-top: 6px;
-  }
-  .book-dot.required { background: #e74c3c; }
-  .book-dot.recommended { background: var(--amber); }
-  .book-dot.optional { background: var(--green-accent); }
-  .book-none { color: var(--text-muted); font-style: italic; font-size: 13px; }
+/* BOOKING CELL */
+.book-item { display: flex; align-items: flex-start; gap: 6px; margin: 3px 0; font-size: 13px; }
+.book-dot { width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; margin-top: 6px; }
+.book-dot.required { background: #e74c3c; }
+.book-dot.recommended { background: var(--amber); }
+.book-dot.optional { background: var(--green-accent); }
+.book-none { color: var(--text-muted); font-style: italic; font-size: 13px; }
+.booking-legend { display: flex; gap: 16px; flex-wrap: wrap; margin: 0.75rem 0 1.5rem; font-size: 12.5px; color: var(--text-muted); }
+.leg-item { display: flex; align-items: center; gap: 5px; }
+.leg-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
 
-  .booking-legend {
-    display: flex;
-    gap: 16px;
-    flex-wrap: wrap;
-    margin: 0.75rem 0 1.5rem;
-    font-size: 12.5px;
-    color: var(--text-muted);
-  }
-  .leg-item { display: flex; align-items: center; gap: 5px; }
-  .leg-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+/* CAR CARDS */
+.car-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 12px; margin: 1rem 0 1.5rem; }
+.car-card { background: #fff; border: 1px solid var(--border); border-radius: 10px; padding: 12px 14px; }
+.car-label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); margin-bottom: 4px; }
+.car-value { font-size: 15px; font-weight: 500; color: var(--green-deep); }
+.car-sub { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
+.car-card.highlight { background: var(--green-deep); border-color: var(--green-deep); }
+.car-card.highlight .car-label { color: rgba(255,255,255,0.6); }
+.car-card.highlight .car-value { color: var(--green-accent); }
+.car-card.highlight .car-sub { color: rgba(255,255,255,0.55); }
 
-  /* CAR CARDS */
-  .car-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
-    gap: 12px;
-    margin: 1rem 0 1.5rem;
-  }
-  .car-card {
-    background: #fff;
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 12px 14px;
-  }
-  .car-label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); margin-bottom: 4px; }
-  .car-value { font-size: 15px; font-weight: 500; color: var(--green-deep); }
-  .car-sub { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
-  .car-card.highlight {
-    background: var(--green-deep);
-    border-color: var(--green-deep);
-  }
-  .car-card.highlight .car-label { color: rgba(255,255,255,0.6); }
-  .car-card.highlight .car-value { color: var(--green-accent); }
-  .car-card.highlight .car-sub { color: rgba(255,255,255,0.55); }
+/* TIPS BOX */
+.tips-box { background: #fff; border: 1px solid var(--border); border-left: 4px solid var(--green-accent); border-radius: 0 10px 10px 0; padding: 1rem 1.25rem; margin: 1.25rem 0; }
+.tips-box h4 { font-family: 'Playfair Display', serif; font-size: 14px; font-weight: 600; color: var(--green-deep); margin-bottom: 0.5rem; }
+.tips-box ul { list-style: none; font-size: 13.5px; color: var(--text-muted); line-height: 1.8; }
+.tips-box ul li::before { content: '→ '; color: var(--green-accent); font-weight: 500; }
 
-  /* TIPS BOX */
-  .tips-box {
-    background: #fff;
-    border: 1px solid var(--border);
-    border-left: 4px solid var(--green-accent);
-    border-radius: 0 10px 10px 0;
-    padding: 1rem 1.25rem;
-    margin: 1.25rem 0;
-  }
-  .tips-box h4 {
-    font-family: 'Playfair Display', serif;
-    font-size: 14px;
-    font-weight: 600;
-    color: var(--green-deep);
-    margin-bottom: 0.5rem;
-  }
-  .tips-box ul {
-    list-style: none;
-    font-size: 13.5px;
-    color: var(--text-muted);
-    line-height: 1.8;
-  }
-  .tips-box ul li::before { content: '→ '; color: var(--green-accent); font-weight: 500; }
+/* ============================================
+   EXPENSE TRACKER
+   ============================================ */
+.exp-intro { font-size: 13.5px; color: var(--text-muted); margin-bottom: 1.25rem; line-height: 1.6; }
+.exp-intro strong { color: var(--text); font-weight: 500; }
 
-  /* FOOTER */
-  footer {
-    background: var(--green-deep);
-    color: rgba(255,255,255,0.5);
-    text-align: center;
-    padding: 1.5rem;
-    font-size: 12px;
-    margin-top: 3rem;
-  }
-  footer strong { color: rgba(255,255,255,0.8); }
+/* Who pays what legend */
+.payer-legend { display: flex; gap: 12px; margin-bottom: 1.5rem; flex-wrap: wrap; }
+.payer-tag { display: flex; align-items: center; gap: 8px; background: #fff; border: 1px solid var(--border); border-radius: 10px; padding: 8px 14px; font-size: 13px; }
+.payer-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+.payer-dot.sasha { background: var(--sasha); }
+.payer-dot.solya { background: var(--solya); }
+.payer-name { font-weight: 500; color: var(--text); }
+.payer-role { color: var(--text-muted); font-size: 12px; margin-left: 2px; }
 
-  @media (max-width: 600px) {
-    .hero { padding: 2.5rem 1.25rem 2rem; }
-    .container, .notice-wrap { padding-left: 1rem; padding-right: 1rem; }
-    .car-grid { grid-template-columns: 1fr 1fr; }
-  }
+/* Summary cards */
+.exp-summary { display: grid; grid-template-columns: repeat(auto-fill, minmax(155px, 1fr)); gap: 10px; margin: 0 0 1.75rem; }
+.exp-card { background: #fff; border: 1px solid var(--border); border-radius: 10px; padding: 12px 14px; }
+.exp-card-label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); margin-bottom: 4px; }
+.exp-card-value { font-size: 1.4rem; font-weight: 500; color: var(--green-deep); font-family: 'Playfair Display', serif; }
+.exp-card-sub { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
+.exp-card.sasha-card { border-color: var(--sasha); border-top: 3px solid var(--sasha); }
+.exp-card.solya-card { border-color: var(--solya); border-top: 3px solid var(--solya); }
+.exp-card.settlement-card { background: var(--green-deep); border-color: var(--green-deep); }
+.exp-card.settlement-card .exp-card-label { color: rgba(255,255,255,0.6); }
+.exp-card.settlement-card .exp-card-value { color: var(--green-accent); font-size: 1.1rem; }
+.exp-card.settlement-card .exp-card-sub { color: rgba(255,255,255,0.55); }
+
+/* Expense table */
+.exp-table-wrap { overflow-x: auto; border-radius: 12px; border: 1px solid var(--border); margin-bottom: 1.5rem; }
+.exp-table { width: 100%; border-collapse: collapse; font-size: 13.5px; min-width: 600px; }
+.exp-table thead th { background: var(--green-deep); color: rgba(255,255,255,0.85); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 500; padding: 10px 12px; text-align: left; }
+.exp-table tbody tr { border-bottom: 1px solid var(--border); }
+.exp-table tbody tr:last-child { border-bottom: none; }
+.exp-table td { padding: 10px 12px; vertical-align: middle; }
+.exp-row-sasha { background: rgba(45,106,79,0.04); }
+.exp-row-solya { background: rgba(37,99,168,0.04); }
+.exp-row-sasha:hover { background: rgba(45,106,79,0.09) !important; }
+.exp-row-solya:hover { background: rgba(37,99,168,0.09) !important; }
+.payer-pill { display: inline-flex; align-items: center; gap: 5px; font-size: 12px; padding: 2px 9px; border-radius: 100px; font-weight: 400; }
+.payer-pill.sasha { background: var(--sasha-light); color: var(--sasha); }
+.payer-pill.solya { background: var(--solya-light); color: var(--solya); }
+.amount-cell { font-family: 'DM Sans', sans-serif; font-weight: 500; white-space: nowrap; }
+.amount-tbd { color: var(--text-muted); font-style: italic; font-weight: 300; }
+.del-btn { background: none; border: none; cursor: pointer; color: var(--coral); font-size: 16px; padding: 2px 6px; border-radius: 4px; opacity: 0.5; transition: opacity 0.15s; }
+.del-btn:hover { opacity: 1; background: var(--coral-light); }
+.cat-badge { font-size: 11px; padding: 2px 7px; border-radius: 100px; background: var(--cream-dark); color: var(--text-muted); font-weight: 400; }
+
+/* Add expense form */
+.add-exp-section { background: #fff; border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem 1.5rem; margin-bottom: 1.5rem; }
+.add-exp-section h4 { font-family: 'Playfair Display', serif; font-size: 14px; font-weight: 600; color: var(--green-deep); margin-bottom: 1rem; }
+.exp-form { display: grid; grid-template-columns: 1fr 1fr 110px 120px 90px auto; gap: 10px; align-items: end; }
+.exp-form label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.07em; color: var(--text-muted); display: block; margin-bottom: 4px; }
+.exp-form input, .exp-form select {
+  width: 100%; padding: 8px 10px; border: 1px solid var(--border); border-radius: 7px;
+  font-family: 'DM Sans', sans-serif; font-size: 13.5px; background: var(--cream);
+  color: var(--text); outline: none; transition: border-color 0.15s;
+}
+.exp-form input:focus, .exp-form select:focus { border-color: var(--green-accent); }
+.add-btn { background: var(--green-mid); color: #fff; border: none; border-radius: 7px; padding: 9px 18px; font-family: 'DM Sans', sans-serif; font-size: 13.5px; font-weight: 500; cursor: pointer; white-space: nowrap; transition: background 0.15s; }
+.add-btn:hover { background: var(--green-deep); }
+.clear-link { text-align: right; margin-top: 0.5rem; }
+.clear-link button { background: none; border: none; color: var(--text-muted); font-size: 12px; cursor: pointer; text-decoration: underline; font-family: 'DM Sans', sans-serif; }
+.clear-link button:hover { color: var(--coral); }
+
+/* Settlement box */
+.settlement-box { background: linear-gradient(135deg, var(--green-deep), #1f4d38); border-radius: 12px; padding: 1.25rem 1.5rem; color: #fff; }
+.settlement-box h4 { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 600; color: var(--green-accent); margin-bottom: 0.75rem; }
+.settlement-result { font-size: 1rem; font-weight: 500; line-height: 1.6; }
+.settlement-result .owed { color: var(--green-accent); font-size: 1.25rem; font-weight: 600; }
+.settlement-result .settled { color: rgba(255,255,255,0.6); font-style: italic; }
+.settlement-breakdown { margin-top: 0.75rem; font-size: 12.5px; color: rgba(255,255,255,0.6); line-height: 1.8; }
+
+@media (max-width: 700px) {
+  .exp-form { grid-template-columns: 1fr 1fr; }
+  .exp-summary { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 600px) {
+  .hero { padding: 2.5rem 1.25rem 2rem; }
+  .container, .notice-wrap { padding-left: 1rem; padding-right: 1rem; }
+  .car-grid { grid-template-columns: 1fr 1fr; }
+  .exp-form { grid-template-columns: 1fr; }
+}
+
+/* FOOTER */
+footer { background: var(--green-deep); color: rgba(255,255,255,0.5); text-align: center; padding: 1.5rem; font-size: 12px; margin-top: 3rem; }
+footer strong { color: rgba(255,255,255,0.8); }
 </style>
 </head>
 <body>
@@ -295,8 +211,8 @@
     <h1>7 Nights in <em>Ireland</em></h1>
     <p style="font-size:1.05rem; color:rgba(255,255,255,0.7); margin-top:0.4rem;">A clockwise loop through the Emerald Isle's finest</p>
     <div class="hero-meta">
-      <div class="hero-pill"><span class="dot"></span> Arrive Dublin · 1 May, late night (Friday)</div>
-      <div class="hero-pill"><span class="dot"></span> Depart Dublin · 8 May, late night (Friday)</div>
+      <div class="hero-pill"><span class="dot"></span> FR 863 · Rzeszów 22:25 → Dublin 00:35 (Fri 1 May)</div>
+      <div class="hero-pill"><span class="dot"></span> FR 862 · Dublin 18:00 → Rzeszów 22:00 (Fri 8 May)</div>
       <div class="hero-pill"><span class="dot"></span> 2 travellers · Republic only</div>
       <div class="hero-pill"><span class="dot"></span> Visa-free for Ukrainians ✓</div>
     </div>
@@ -319,13 +235,11 @@
     <div class="section-number">1</div>
     <div class="section-title">Day-by-Day Itinerary</div>
   </div>
-
   <div class="booking-legend">
     <div class="leg-item"><div class="leg-dot" style="background:#e74c3c"></div> Must book in advance</div>
     <div class="leg-item"><div class="leg-dot" style="background:#d97706"></div> Strongly recommended to pre-book</div>
     <div class="leg-item"><div class="leg-dot" style="background:#52b788"></div> Optional / walk-in usually fine</div>
   </div>
-
   <div class="table-wrap">
     <table>
       <thead>
@@ -343,10 +257,15 @@
           <td>Fri 1 May<br>late night</td>
           <td>Dublin<br><small style="color:var(--text-muted)">Check in</small></td>
           <td>Airport taxi or bus (Airlink 747)</td>
-          <td>Arrive Dublin Airport late night. Transfer to city-centre hotel. No sightseeing — rest up.</td>
+          <td>
+            <strong>✈ FR 863</strong> Rzeszów (RZE) → Dublin (DUB)<br>
+            Dep <strong>22:25</strong> · Arr <strong>00:35</strong> (2 May)<br>
+            <small style="color:var(--text-muted)">Reservation: <strong>NT3R2F</strong> · Sasha seat 21A · Solya seat 21B<br>Priority + 2 cabin bags each</small><br>
+            Transfer to hotel. No sightseeing — rest up.
+          </td>
           <td><span class="badge b-gray">Arrival</span></td>
           <td>
-            <div class="book-item"><span class="book-dot required"></span><span>Hotel in Dublin (book months ahead for May)</span></div>
+            <div class="book-item"><span class="book-dot required"></span><span>✅ <strong>Booked &amp; paid</strong> — via Airbnb (host: Daire Dunne)</span></div>
             <div class="book-item"><span class="book-dot optional"></span><span>Airlink bus ticket (€7.50, pay onboard)</span></div>
           </td>
         </tr>
@@ -362,7 +281,7 @@
           </td>
           <td><span class="badge b-blue">History</span><span class="badge b-teal">Culture</span><span class="badge b-amber">Food</span></td>
           <td>
-            <div class="book-item"><span class="book-dot required"></span><span><strong>Guinness Storehouse</strong> — sells out weeks ahead in May. Book at guinness-storehouse.com</span></div>
+            <div class="book-item"><span class="book-dot required"></span><span><strong>Guinness Storehouse</strong> ✅ <strong>Booked</strong> — €60 ×2, tickets in Gmail</span></div>
             <div class="book-item"><span class="book-dot required"></span><span><strong>Book of Kells</strong> (Trinity College) — queue avoidable only with pre-booked timed slot. tcd.ie/visitors</span></div>
             <div class="book-item"><span class="book-dot optional"></span><span>Dublin Castle — walk-in fine but guided tour worth booking</span></div>
           </td>
@@ -373,7 +292,7 @@
           <td><strong>Pick up car</strong> at Dublin Airport (morning) · Drive ~2.5 h with stop</td>
           <td>
             <strong>En route (~1 h from Dublin):</strong> <strong>Glendalough</strong> — early Christian monastic valley in Wicklow Mountains. Walk the lake loop (2–3 h).<br>
-            <strong>Afternoon:</strong> Arrive Kilkenny · Kilkenny Castle · Medieval Mile walking tour · Black Abbey
+            <strong>Afternoon:</strong> Arrive Kilkenny · Kilkenny Castle · <a href="http://kilkennycitytours.com/blog/wp-content/uploads/2017/05/Medieval-Mile-City-Map-2017.pdf" target="_blank" style="color:var(--green-mid);text-decoration:underline">Medieval Mile walking tour 🗺</a> · Black Abbey
             <br><small style="color:var(--green-mid)">✓ Glendalough open daily 9:30am–6pm · ✓ Kilkenny Castle open 7 days/week 9:30am–5:30pm</small>
           </td>
           <td><span class="badge b-green">Nature</span><span class="badge b-blue">History</span><span class="badge b-coral">Castle</span></td>
@@ -438,7 +357,7 @@
           <td>Killarney → Cliffs → Galway</td>
           <td>Car · ~3.5 h total · Full day</td>
           <td>
-            <strong>Morning (arrive early!):</strong> <strong>Cliffs of Moher</strong> — Ireland's most iconic sight. Arrive before 9 am to beat tour buses. Walk the clifftop path (€1 km) both north and south.<br>
+            <strong>Morning (arrive early!):</strong> <strong>Cliffs of Moher</strong> — Ireland's most iconic sight. Arrive before 9 am to beat tour buses. Walk the clifftop path (1 km) both north and south.<br>
             <strong>Afternoon:</strong> Arrive <strong>Galway</strong> (~1.5 h from Cliffs) · Galway Cathedral · Quay St &amp; Latin Quarter<br>
             <strong>Evening:</strong> Trad music pubs — Monroe's Tavern, The Crane Bar, Tigh Coili
             <br><small style="color:var(--green-mid)">✓ Cliffs of Moher open Thu 8am–9pm in May</small>
@@ -456,9 +375,10 @@
           <td>Car · ~2 h · Return car at Dublin Airport</td>
           <td>
             <strong>Morning:</strong> Salthill promenade walk (15 min from centre) · breakfast in Galway<br>
-            <strong>Midday:</strong> Drive M6/M4 to Dublin (~2 h) — leave by noon to allow time at airport<br>
-            <strong>Afternoon:</strong> Return rental car at Dublin Airport (allow 1 h buffer before check-in)<br>
-            <strong>Late night:</strong> Depart ✈
+            <strong>⚠ Leave Galway by 13:00</strong> — drive M6/M4 to Dublin (~2 h)<br>
+            <strong>~15:00:</strong> Return rental car at Dublin Airport (allow extra buffer)<br>
+            <strong>✈ FR 862</strong> Dublin (DUB) → Rzeszów (RZE) · Dep <strong>18:00</strong> · Arr <strong>22:00</strong><br>
+            <small style="color:var(--text-muted)">Reservation: <strong>NT3R2F</strong> · Sasha seat 23B · Solya seat 23A · Priority + 2 cabin bags each</small>
           </td>
           <td><span class="badge b-gray">Departure</span></td>
           <td>
@@ -475,53 +395,67 @@
     <div class="section-number">2</div>
     <div class="section-title">Accommodation Plan</div>
   </div>
-
   <div class="table-wrap">
     <table>
       <thead>
         <tr>
           <th>Nights</th>
           <th>City</th>
-          <th>Best Area to Stay</th>
+          <th>Hotel / Area</th>
           <th>Notes</th>
-          <th>Pre-book</th>
+          <th>Status</th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td>1–3 May (2 nights)</td>
           <td><strong>Dublin</strong></td>
-          <td>Temple Bar / City Centre / Northside</td>
+          <td>
+            <strong>EasyHotel Dublin City Centre</strong><br>
+            <small style="color:var(--text-muted)">Collins Barracks, Benburb St<br>Stoneybatter, Dublin, D07 XKV4<br>Host: Daire Dunne</small>
+          </td>
           <td>No car needed in Dublin — use Luas tram, DART, and your feet. Pick up car on Sun 3 May morning from Dublin Airport.</td>
-          <td><span class="badge b-coral">Book now</span> Very high demand in May</td>
+          <td><span class="badge b-green">✅ Booked &amp; paid</span><br><small style="color:var(--text-muted);font-size:11px">€465 · via Airbnb</small></td>
         </tr>
         <tr>
           <td>3–4 May (1 night)</td>
           <td><strong>Kilkenny</strong></td>
-          <td>Medieval Mile / High St</td>
+          <td>
+            <strong>Launard House</strong><br>
+            <small style="color:var(--text-muted)">Maidenhill, Kells Road<br>R95 X512 Kilkenny, Ireland</small>
+          </td>
           <td>Compact, walkable city. Free street parking near castle. Nice for an evening stroll.</td>
-          <td><span class="badge b-amber">Book early</span> Limited hotels</td>
+          <td><span class="badge b-amber">⏳ Pay at property</span><br><small style="color:var(--text-muted);font-size:11px">€120 · via Booking.com</small></td>
         </tr>
         <tr>
           <td>4–6 May (2 nights)</td>
           <td><strong>Cork</strong></td>
-          <td>City Centre / Douglas / Blarney area</td>
+          <td>
+            <strong>Lancaster Lodge</strong><br>
+            <small style="color:var(--text-muted)">Lancaster Quay, Western Road<br>Cork, Ireland<br>🅿 Free parking included</small>
+          </td>
           <td>Ideal base for Blarney, Kinsale, and Rock of Cashel day trips. Ireland's food capital.</td>
-          <td><span class="badge b-amber">Book early</span></td>
+          <td><span class="badge b-amber">⏳ Pay at property</span><br><small style="color:var(--text-muted);font-size:11px">€408 · 2 nights · via Booking.com</small></td>
         </tr>
         <tr>
           <td>6–7 May (1 night)</td>
           <td><strong>Killarney</strong></td>
-          <td>Town Centre</td>
+          <td>
+            <strong>Wheatfield House</strong><br>
+            <small style="color:var(--text-muted)">Killarney, County Kerry<br>V93 H6P5, Ireland<br>Booked by Solya via Airbnb</small>
+          </td>
           <td>Gateway to Ring of Kerry and Killarney National Park. Extremely popular tourist town.</td>
-          <td><span class="badge b-coral">Book now</span> Sells out fast</td>
+          <td><span class="badge b-green">✅ Booked</span><br><small style="color:var(--text-muted);font-size:11px">€128 · via Airbnb</small></td>
         </tr>
         <tr>
           <td>7–8 May (1 night)</td>
           <td><strong>Galway</strong></td>
-          <td>Latin Quarter / near Eyre Square</td>
-          <td>Last night before early drive to Dublin Airport. Check out early on May 8.</td>
-          <td><span class="badge b-coral">Book now</span> Very popular</td>
+          <td>
+            <strong>Travelodge Plus Galway</strong><br>
+            <small style="color:var(--text-muted)">Tuam Road, Galway, Ireland</small>
+          </td>
+          <td>Last night before early drive to Dublin Airport. Check out early on May 8 — leave by 13:00 for 18:00 flight.</td>
+          <td><span class="badge b-amber">⏳ Pay at property</span><br><small style="color:var(--text-muted);font-size:11px">€177 · via Booking.com</small></td>
         </tr>
       </tbody>
     </table>
@@ -532,7 +466,6 @@
     <div class="section-number">3</div>
     <div class="section-title">Car Rental</div>
   </div>
-
   <div class="car-grid">
     <div class="car-card highlight">
       <div class="car-label">Pick up</div>
@@ -565,7 +498,6 @@
       <div class="car-sub">~€55–85/day all-in</div>
     </div>
   </div>
-
   <div class="table-wrap">
     <table>
       <thead>
@@ -605,7 +537,6 @@
     <div class="section-number">4</div>
     <div class="section-title">Travel Tips &amp; Essentials</div>
   </div>
-
   <div class="tips-box">
     <h4>Entry requirements (Ukrainians)</h4>
     <ul>
@@ -616,7 +547,6 @@
       <li>Northern Ireland = UK visa required — itinerary avoids it entirely</li>
     </ul>
   </div>
-
   <div class="tips-box">
     <h4>Practical tips</h4>
     <ul>
@@ -629,12 +559,320 @@
     </ul>
   </div>
 
-</div>
+  <!-- EXPENSE TRACKER -->
+  <div class="section-header">
+    <div class="section-number">5</div>
+    <div class="section-title">Expense Tracker &amp; Split Calculator</div>
+  </div>
+
+  <p class="exp-intro">
+    Track all trip expenses below. Each item is marked by who paid — after the trip, the calculator works out exactly <strong>who owes whom</strong> so you can settle up in one transfer.
+  </p>
+
+  <div class="payer-legend">
+    <div class="payer-tag">
+      <div class="payer-dot sasha"></div>
+      <span class="payer-name">Sasha</span>
+      <span class="payer-role">— paying for hotels</span>
+    </div>
+    <div class="payer-tag">
+      <div class="payer-dot solya"></div>
+      <span class="payer-name">Solya</span>
+      <span class="payer-role">— paying for car rental</span>
+    </div>
+  </div>
+
+  <!-- Summary cards -->
+  <div class="exp-summary">
+    <div class="exp-card sasha-card">
+      <div class="exp-card-label">Sasha paid</div>
+      <div class="exp-card-value" id="sasha-total">€0</div>
+      <div class="exp-card-sub" id="sasha-count">0 items</div>
+    </div>
+    <div class="exp-card solya-card">
+      <div class="exp-card-label">Solya paid</div>
+      <div class="exp-card-value" id="solya-total">€0</div>
+      <div class="exp-card-sub" id="solya-count">0 items</div>
+    </div>
+    <div class="exp-card">
+      <div class="exp-card-label">Total spent</div>
+      <div class="exp-card-value" id="grand-total">€0</div>
+      <div class="exp-card-sub">Both together</div>
+    </div>
+    <div class="exp-card">
+      <div class="exp-card-label">Each person's share</div>
+      <div class="exp-card-value" id="each-share">€0</div>
+      <div class="exp-card-sub">50 / 50 split</div>
+    </div>
+    <div class="exp-card settlement-card">
+      <div class="exp-card-label">Settlement</div>
+      <div class="exp-card-value" id="settlement-short">—</div>
+      <div class="exp-card-sub" id="settlement-short-sub">Add expenses to calculate</div>
+    </div>
+  </div>
+
+  <!-- Expense table -->
+  <div class="exp-table-wrap">
+    <table class="exp-table">
+      <thead>
+        <tr>
+          <th style="width:85px">Date</th>
+          <th>Description</th>
+          <th style="width:120px">Category</th>
+          <th style="width:90px">Paid by</th>
+          <th style="width:95px">Amount (€)</th>
+          <th style="width:40px"></th>
+        </tr>
+      </thead>
+      <tbody id="exp-tbody">
+        <!-- populated by JS -->
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Add expense form -->
+  <div class="add-exp-section">
+    <h4>+ Add Expense</h4>
+    <div class="exp-form">
+      <div>
+        <label for="exp-date">Date</label>
+        <input type="text" id="exp-date" placeholder="e.g. 2 May">
+      </div>
+      <div>
+        <label for="exp-desc">Description</label>
+        <input type="text" id="exp-desc" placeholder="e.g. Guinness Storehouse ×2">
+      </div>
+      <div>
+        <label for="exp-cat">Category</label>
+        <select id="exp-cat">
+          <option>🏨 Hotel</option>
+          <option>🚗 Car rental</option>
+          <option>🎟 Attraction</option>
+          <option>🍽 Food & drink</option>
+          <option>⛽ Fuel</option>
+          <option>🚌 Transport</option>
+          <option>🛍 Shopping</option>
+          <option>💊 Health / insurance</option>
+          <option>✈ Flights</option>
+          <option>📦 Other</option>
+        </select>
+      </div>
+      <div>
+        <label for="exp-payer">Paid by</label>
+        <select id="exp-payer">
+          <option value="Sasha">Sasha</option>
+          <option value="Solya">Solya</option>
+          <option value="Split">Split equally</option>
+        </select>
+      </div>
+      <div>
+        <label for="exp-amount">Amount (€)</label>
+        <input type="number" id="exp-amount" placeholder="0.00" min="0" step="0.01">
+      </div>
+      <div>
+        <label>&nbsp;</label>
+        <button class="add-btn" onclick="addExpense()">Add</button>
+      </div>
+    </div>
+    <div class="clear-link"><button onclick="clearAll()">Reset all expenses</button></div>
+  </div>
+
+  <!-- Settlement detail -->
+  <div class="settlement-box">
+    <h4>💶 Settlement Summary</h4>
+    <div class="settlement-result" id="settlement-detail">Add expenses above to see the settlement.</div>
+    <div class="settlement-breakdown" id="settlement-breakdown"></div>
+  </div>
+
+</div><!-- end .container -->
 
 <footer>
   <strong>Ireland Trip · May 2026</strong> · Itinerary for two · Republic of Ireland only<br>
   <span style="font-size:11px">Visa information correct as of 2026 · Always verify entry requirements before travel</span>
 </footer>
+
+<script>
+// ── Default expenses (pre-populated planning data) ──────────────────────────
+const DEFAULT_EXPENSES = [
+  { id: 1, date: '1–3 May', desc: 'Dublin — EasyHotel City Centre, 2 nights (Airbnb, Daire Dunne) ✅ paid', cat: '🏨 Hotel', payer: 'Sasha', amount: 465 },
+  { id: 13, date: '1 &amp; 8 May', desc: 'Ryanair flights ×2 — FR 863 &amp; FR 862, RZE↔DUB, res. NT3R2F (1716.39 PLN = €405)', cat: '✈ Flights', payer: 'Sasha', amount: 405 },
+  { id: 2, date: '3–4 May', desc: 'Kilkenny — Launard House, 1 night (Booking.com, pay at property)', cat: '🏨 Hotel', payer: 'Sasha', amount: 120 },
+  { id: 3, date: '4–6 May', desc: 'Cork — Lancaster Lodge, 2 nights, free parking (Booking.com, pay at property)', cat: '🏨 Hotel', payer: 'Sasha', amount: 408 },
+  { id: 4, date: '6–7 May', desc: 'Killarney — Wheatfield House, 1 night ✅ booked (Airbnb, Solya)', cat: '🏨 Hotel', payer: 'Solya', amount: 128 },
+  { id: 5, date: '7–8 May', desc: 'Galway — Travelodge Plus, 1 night (Booking.com, pay at property)', cat: '🏨 Hotel', payer: 'Sasha', amount: 177 },
+  { id: 6, date: '3–8 May', desc: 'Car rental — automatic + SCDW (6 days)', cat: '🚗 Car rental', payer: 'Solya', amount: null },
+  { id: 7, date: '2 May',   desc: 'Guinness Storehouse tickets ×2 ✅ booked (tickets in Gmail)', cat: '🎟 Attraction', payer: null, amount: 60 },
+  { id: 8, date: '2 May',   desc: 'Book of Kells / Trinity College ×2', cat: '🎟 Attraction', payer: null, amount: null },
+  { id: 9, date: '5 May',   desc: 'Blarney Castle tickets ×2', cat: '🎟 Attraction', payer: null, amount: null },
+  { id: 10, date: '7 May',  desc: 'Cliffs of Moher tickets ×2', cat: '🎟 Attraction', payer: null, amount: null },
+  { id: 11, date: '3 May',  desc: 'Kilkenny Castle tickets ×2', cat: '🎟 Attraction', payer: null, amount: null },
+  { id: 12, date: '6–7 May','desc': 'Fuel (full loop, est.)', cat: '⛽ Fuel', payer: null, amount: null },
+];
+
+let nextId = 100;
+
+// ── Load / Save ──────────────────────────────────────────────────────────────
+function loadExpenses() {
+  try {
+    const stored = localStorage.getItem('ireland2026_expenses');
+    if (stored) return JSON.parse(stored);
+  } catch(e) {}
+  return DEFAULT_EXPENSES.map(e => ({ ...e }));
+}
+function saveExpenses(exps) {
+  try { localStorage.setItem('ireland2026_expenses', JSON.stringify(exps)); } catch(e) {}
+}
+function getExpenses() {
+  let exps = loadExpenses();
+  if (exps.length) {
+    nextId = Math.max(...exps.map(e => e.id || 0)) + 1;
+  }
+  return exps;
+}
+
+// ── Render ──────────────────────────────────────────────────────────────────
+function fmt(amount) {
+  if (amount === null || amount === undefined || amount === '') return null;
+  return '€' + parseFloat(amount).toFixed(2).replace(/\.00$/, '');
+}
+
+function renderTable() {
+  const exps = getExpenses();
+  const tbody = document.getElementById('exp-tbody');
+  tbody.innerHTML = '';
+
+  exps.forEach(e => {
+    const hasPayer = e.payer && e.payer !== '';
+    const rowClass = e.payer === 'Sasha' ? 'exp-row-sasha' : (e.payer === 'Solya' ? 'exp-row-solya' : '');
+    const payerPill = hasPayer
+      ? `<span class="payer-pill ${e.payer === 'Sasha' ? 'sasha' : (e.payer === 'Solya' ? 'solya' : 'sasha')}">${e.payer}</span>`
+      : `<span style="color:var(--text-muted);font-size:12px;font-style:italic">TBD</span>`;
+    const amountDisplay = (e.amount !== null && e.amount !== undefined && e.amount !== '')
+      ? `<span class="amount-cell">${fmt(e.amount)}</span>`
+      : `<span class="amount-tbd">TBD</span>`;
+
+    const tr = document.createElement('tr');
+    tr.className = rowClass;
+    tr.dataset.id = e.id;
+    tr.innerHTML = `
+      <td style="font-size:12px;color:var(--text-muted)">${e.date || ''}</td>
+      <td>${e.desc || ''} <span class="cat-badge" style="margin-left:4px">${e.cat || ''}</span></td>
+      <td></td>
+      <td>${payerPill}</td>
+      <td>${amountDisplay}</td>
+      <td><button class="del-btn" onclick="deleteExpense(${e.id})" title="Remove">×</button></td>
+    `;
+    // put cat badge in cell 3
+    tr.cells[2].innerHTML = '';
+    tbody.appendChild(tr);
+  });
+
+  recalc(exps);
+}
+
+// ── Recalculate ──────────────────────────────────────────────────────────────
+function recalc(exps) {
+  let sashaTotal = 0, solyaTotal = 0, sashaCount = 0, solyaCount = 0;
+  exps.forEach(e => {
+    if (e.amount === null || e.amount === undefined || e.amount === '') return;
+    const amt = parseFloat(e.amount);
+    if (isNaN(amt)) return;
+    if (e.payer === 'Sasha') { sashaTotal += amt; sashaCount++; }
+    else if (e.payer === 'Solya') { solyaTotal += amt; solyaCount++; }
+    else if (e.payer === 'Split') { sashaTotal += amt/2; solyaTotal += amt/2; sashaCount++; solyaCount++; }
+  });
+
+  const grand = sashaTotal + solyaTotal;
+  const each = grand / 2;
+  const diff = sashaTotal - each; // positive = Sasha paid more → Solya owes Sasha
+
+  document.getElementById('sasha-total').textContent = '€' + sashaTotal.toFixed(2).replace(/\.00$/,'');
+  document.getElementById('sasha-count').textContent = sashaCount + ' item' + (sashaCount !== 1 ? 's' : '');
+  document.getElementById('solya-total').textContent = '€' + solyaTotal.toFixed(2).replace(/\.00$/,'');
+  document.getElementById('solya-count').textContent = solyaCount + ' item' + (solyaCount !== 1 ? 's' : '');
+  document.getElementById('grand-total').textContent = '€' + grand.toFixed(2).replace(/\.00$/,'');
+  document.getElementById('each-share').textContent = '€' + each.toFixed(2).replace(/\.00$/,'');
+
+  const settlementShort = document.getElementById('settlement-short');
+  const settlementShortSub = document.getElementById('settlement-short-sub');
+  const settlementDetail = document.getElementById('settlement-detail');
+  const settlementBreakdown = document.getElementById('settlement-breakdown');
+
+  if (grand === 0) {
+    settlementShort.textContent = '—';
+    settlementShortSub.textContent = 'Add amounts to calculate';
+    settlementDetail.innerHTML = 'Add expense amounts above to see the settlement.';
+    settlementBreakdown.innerHTML = '';
+    return;
+  }
+
+  const absDiff = Math.abs(diff);
+  let whoOwes, owedTo;
+  if (diff > 0.01) { whoOwes = 'Solya'; owedTo = 'Sasha'; }
+  else if (diff < -0.01) { whoOwes = 'Sasha'; owedTo = 'Solya'; }
+
+  if (!whoOwes) {
+    settlementShort.textContent = '✓ Even';
+    settlementShortSub.textContent = 'No transfer needed';
+    settlementDetail.innerHTML = '<span class="settled">You\'re perfectly even — no transfer needed! 🎉</span>';
+  } else {
+    settlementShort.textContent = `€${absDiff.toFixed(2).replace(/\.00$/,'')}`;
+    settlementShortSub.textContent = `${whoOwes} → ${owedTo}`;
+    settlementDetail.innerHTML = `
+      <strong style="color:#fff">${whoOwes}</strong> owes <strong style="color:#fff">${owedTo}</strong>
+      <span class="owed"> €${absDiff.toFixed(2)}</span>
+    `;
+  }
+
+  settlementBreakdown.innerHTML = `
+    Sasha paid: €${sashaTotal.toFixed(2)} &nbsp;|&nbsp;
+    Solya paid: €${solyaTotal.toFixed(2)} &nbsp;|&nbsp;
+    Grand total: €${grand.toFixed(2)} &nbsp;|&nbsp;
+    Each person's fair share: €${each.toFixed(2)}
+  `;
+}
+
+// ── Add / Delete ──────────────────────────────────────────────────────────────
+function addExpense() {
+  const date   = document.getElementById('exp-date').value.trim();
+  const desc   = document.getElementById('exp-desc').value.trim();
+  const cat    = document.getElementById('exp-cat').value;
+  const payer  = document.getElementById('exp-payer').value;
+  const amount = document.getElementById('exp-amount').value;
+
+  if (!desc) { document.getElementById('exp-desc').focus(); return; }
+
+  const exps = loadExpenses();
+  exps.push({ id: nextId++, date, desc, cat, payer, amount: amount !== '' ? parseFloat(amount) : null });
+  saveExpenses(exps);
+  renderTable();
+
+  document.getElementById('exp-date').value = '';
+  document.getElementById('exp-desc').value = '';
+  document.getElementById('exp-amount').value = '';
+}
+
+function deleteExpense(id) {
+  let exps = loadExpenses();
+  exps = exps.filter(e => e.id !== id);
+  saveExpenses(exps);
+  renderTable();
+}
+
+function clearAll() {
+  if (!confirm('Reset all expenses back to the default planning list?')) return;
+  localStorage.removeItem('ireland2026_expenses');
+  renderTable();
+}
+
+// Allow pressing Enter in the amount field to add
+document.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('exp-amount').addEventListener('keydown', e => {
+    if (e.key === 'Enter') addExpense();
+  });
+  renderTable();
+});
+</script>
 
 </body>
 </html>
