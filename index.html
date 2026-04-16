@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ireland May 2025 — 7-Night Itinerary</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --green-deep: #1a3c2e;
+    --green-mid: #2d6a4f;
+    --green-accent: #52b788;
+    --green-light: #d8f3dc;
+    --cream: #faf8f3;
+    --cream-dark: #f0ebe0;
+    --text: #1c1c1c;
+    --text-muted: #6b6457;
+    --gold: #c9a84c;
+    --gold-light: #f5e9c8;
+    --amber: #d97706;
+    --blue: #2563a8;
+    --blue-light: #dbeafe;
+    --coral: #b84c3a;
+    --coral-light: #fde8e4;
+    --purple: #5b3f8e;
+    --purple-light: #ede9fa;
+    --teal-light: #ccfbf1;
+    --teal: #0d9488;
+    --border: #e2ddd6;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--cream);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    line-height: 1.7;
+  }
+
+  /* HERO */
+  .hero {
+    background: var(--green-deep);
+    color: #fff;
+    padding: 4rem 2rem 3rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 80% 50%, rgba(82,183,136,0.18) 0%, transparent 60%),
+                radial-gradient(ellipse at 10% 80%, rgba(201,168,76,0.12) 0%, transparent 50%);
+  }
+  .hero-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+  .hero-label {
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--green-accent);
+    margin-bottom: 1rem;
+    font-weight: 500;
+  }
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.2rem, 5vw, 3.6rem);
+    font-weight: 600;
+    line-height: 1.15;
+    margin-bottom: 0.5rem;
+  }
+  .hero h1 em {
+    font-style: italic;
+    color: var(--green-accent);
+  }
+  .hero-sub {
+    font-size: 1rem;
+    color: rgba(255,255,255,0.65);
+    margin-top: 0.75rem;
+    font-weight: 300;
+  }
+  .hero-meta {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+  }
+  .hero-pill {
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 100px;
+    padding: 6px 16px;
+    font-size: 13px;
+    color: rgba(255,255,255,0.85);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .hero-pill .dot {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: var(--green-accent);
+    flex-shrink: 0;
+  }
+
+  /* VISA NOTICE */
+  .notice-wrap { max-width: 900px; margin: 2rem auto; padding: 0 1.5rem; }
+  .notice {
+    background: linear-gradient(135deg, #fff9ee, #f0fdf4);
+    border: 1px solid var(--gold);
+    border-radius: 12px;
+    padding: 1rem 1.25rem;
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+  }
+  .notice-icon {
+    font-size: 20px;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  .notice-text { font-size: 13.5px; color: var(--text); line-height: 1.6; }
+  .notice-text strong { font-weight: 500; color: var(--green-deep); }
+
+  /* MAIN CONTENT */
+  .container { max-width: 900px; margin: 0 auto; padding: 0 1.5rem 4rem; }
+
+  /* SECTION HEADERS */
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 2.5rem 0 1rem;
+  }
+  .section-number {
+    width: 28px; height: 28px;
+    background: var(--green-mid);
+    color: #fff;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 12px; font-weight: 500;
+    flex-shrink: 0;
+  }
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--green-deep);
+  }
+
+  /* TABLES */
+  .table-wrap { overflow-x: auto; border-radius: 12px; border: 1px solid var(--border); }
+  table { width: 100%; border-collapse: collapse; font-size: 13.5px; min-width: 700px; }
+  thead th {
+    background: var(--green-deep);
+    color: rgba(255,255,255,0.85);
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 10px 12px;
+    text-align: left;
+    white-space: nowrap;
+  }
+  tbody tr { border-bottom: 1px solid var(--border); }
+  tbody tr:last-child { border-bottom: none; }
+  tbody tr:nth-child(even) { background: rgba(0,0,0,0.018); }
+  tbody tr:hover { background: #f0fdf4; transition: background 0.15s; }
+  td { padding: 11px 12px; vertical-align: top; color: var(--text); }
+  td:first-child { font-weight: 500; color: var(--text-muted); font-size: 12.5px; white-space: nowrap; }
+  td strong { font-weight: 500; color: var(--green-deep); }
+
+  /* BADGES */
+  .badge {
+    display: inline-block;
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 100px;
+    font-weight: 400;
+    margin: 1px 2px 1px 0;
+  }
+  .b-green { background: var(--green-light); color: var(--green-mid); }
+  .b-teal { background: var(--teal-light); color: var(--teal); }
+  .b-blue { background: var(--blue-light); color: var(--blue); }
+  .b-amber { background: #fef3c7; color: var(--amber); }
+  .b-coral { background: var(--coral-light); color: var(--coral); }
+  .b-gray { background: var(--cream-dark); color: var(--text-muted); }
+  .b-purple { background: var(--purple-light); color: var(--purple); }
+  .b-gold { background: var(--gold-light); color: #92660f; }
+
+  /* BOOKING CELL */
+  .book-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+    margin: 3px 0;
+    font-size: 13px;
+  }
+  .book-dot {
+    width: 6px; height: 6px; border-radius: 50%;
+    flex-shrink: 0;
+    margin-top: 6px;
+  }
+  .book-dot.required { background: #e74c3c; }
+  .book-dot.recommended { background: var(--amber); }
+  .book-dot.optional { background: var(--green-accent); }
+  .book-none { color: var(--text-muted); font-style: italic; font-size: 13px; }
+
+  .booking-legend {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin: 0.75rem 0 1.5rem;
+    font-size: 12.5px;
+    color: var(--text-muted);
+  }
+  .leg-item { display: flex; align-items: center; gap: 5px; }
+  .leg-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+
+  /* CAR CARDS */
+  .car-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    gap: 12px;
+    margin: 1rem 0 1.5rem;
+  }
+  .car-card {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px 14px;
+  }
+  .car-label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); margin-bottom: 4px; }
+  .car-value { font-size: 15px; font-weight: 500; color: var(--green-deep); }
+  .car-sub { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
+  .car-card.highlight {
+    background: var(--green-deep);
+    border-color: var(--green-deep);
+  }
+  .car-card.highlight .car-label { color: rgba(255,255,255,0.6); }
+  .car-card.highlight .car-value { color: var(--green-accent); }
+  .car-card.highlight .car-sub { color: rgba(255,255,255,0.55); }
+
+  /* TIPS BOX */
+  .tips-box {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--green-accent);
+    border-radius: 0 10px 10px 0;
+    padding: 1rem 1.25rem;
+    margin: 1.25rem 0;
+  }
+  .tips-box h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--green-deep);
+    margin-bottom: 0.5rem;
+  }
+  .tips-box ul {
+    list-style: none;
+    font-size: 13.5px;
+    color: var(--text-muted);
+    line-height: 1.8;
+  }
+  .tips-box ul li::before { content: '→ '; color: var(--green-accent); font-weight: 500; }
+
+  /* FOOTER */
+  footer {
+    background: var(--green-deep);
+    color: rgba(255,255,255,0.5);
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 12px;
+    margin-top: 3rem;
+  }
+  footer strong { color: rgba(255,255,255,0.8); }
+
+  @media (max-width: 600px) {
+    .hero { padding: 2.5rem 1.25rem 2rem; }
+    .container, .notice-wrap { padding-left: 1rem; padding-right: 1rem; }
+    .car-grid { grid-template-columns: 1fr 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-label">Travel Itinerary · 2025</div>
+    <h1>7 Nights in <em>Ireland</em></h1>
+    <p style="font-size:1.05rem; color:rgba(255,255,255,0.7); margin-top:0.4rem;">A clockwise loop through the Emerald Isle's finest</p>
+    <div class="hero-meta">
+      <div class="hero-pill"><span class="dot"></span> Arrive Dublin · 1 May, late night</div>
+      <div class="hero-pill"><span class="dot"></span> Depart Dublin · 8 May, late night</div>
+      <div class="hero-pill"><span class="dot"></span> 2 travellers · Republic only</div>
+      <div class="hero-pill"><span class="dot"></span> Visa-free for Ukrainians ✓</div>
+    </div>
+  </div>
+</div>
+
+<div class="notice-wrap">
+  <div class="notice">
+    <div class="notice-icon">🛂</div>
+    <div class="notice-text">
+      <strong>Visa info for Ukrainians:</strong> No visa required for stays up to 90 days in the Republic of Ireland. Bring a valid biometric passport, return/onward ticket, proof of funds, and travel health insurance. <strong>Northern Ireland = UK</strong> — requires a separate UK visa. This itinerary stays 100% in the Republic.
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- ITINERARY TABLE -->
+  <div class="section-header">
+    <div class="section-number">1</div>
+    <div class="section-title">Day-by-Day Itinerary</div>
+  </div>
+
+  <div class="booking-legend">
+    <div class="leg-item"><div class="leg-dot" style="background:#e74c3c"></div> Must book in advance</div>
+    <div class="leg-item"><div class="leg-dot" style="background:#d97706"></div> Strongly recommended to pre-book</div>
+    <div class="leg-item"><div class="leg-dot" style="background:#52b788"></div> Optional / walk-in usually fine</div>
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th style="width:90px">Date</th>
+          <th style="width:110px">Base</th>
+          <th style="width:100px">Transport</th>
+          <th>Highlights &amp; Sights</th>
+          <th style="width:85px">Tags</th>
+          <th style="width:195px">Pre-book Online</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Thu 1 May<br>late night</td>
+          <td>Dublin<br><small style="color:var(--text-muted)">Check in</small></td>
+          <td>Airport taxi or bus (Airlink 747)</td>
+          <td>Arrive Dublin Airport late night. Transfer to city-centre hotel. No sightseeing — rest up.</td>
+          <td><span class="badge b-gray">Arrival</span></td>
+          <td>
+            <div class="book-item"><span class="book-dot required"></span><span>Hotel in Dublin (book months ahead for May)</span></div>
+            <div class="book-item"><span class="book-dot optional"></span><span>Airlink bus ticket (€7.50, pay onboard)</span></div>
+          </td>
+        </tr>
+        <tr>
+          <td>Fri 2 May</td>
+          <td>Dublin</td>
+          <td>On foot / Luas tram / DART</td>
+          <td>
+            <strong>Morning:</strong> Trinity College &amp; Book of Kells · Dublin Castle · Chester Beatty Library (free)<br>
+            <strong>Afternoon:</strong> Temple Bar &amp; Liffey walk · Guinness Storehouse<br>
+            <strong>Evening:</strong> Live trad music in a pub (The Temple Bar, Mulligan's)
+          </td>
+          <td><span class="badge b-blue">History</span><span class="badge b-teal">Culture</span><span class="badge b-amber">Food</span></td>
+          <td>
+            <div class="book-item"><span class="book-dot required"></span><span><strong>Guinness Storehouse</strong> — sells out weeks ahead in May. Book at guinness-storehouse.com</span></div>
+            <div class="book-item"><span class="book-dot required"></span><span><strong>Book of Kells</strong> (Trinity College) — queue avoidable only with pre-booked timed slot. tcd.ie/visitors</span></div>
+            <div class="book-item"><span class="book-dot optional"></span><span>Dublin Castle — walk-in fine but guided tour worth booking</span></div>
+          </td>
+        </tr>
+        <tr>
+          <td>Sat 3 May</td>
+          <td>Dublin → Kilkenny</td>
+          <td><strong>Pick up car</strong> at Dublin Airport (morning) · Drive ~2.5 h with stop</td>
+          <td>
+            <strong>En route (~1 h from Dublin):</strong> <strong>Glendalough</strong> — early Christian monastic valley in Wicklow Mountains. Walk the lake loop (2–3 h).<br>
+            <strong>Afternoon:</strong> Arrive Kilkenny · Kilkenny Castle · Medieval Mile walking tour · Black Abbey
+          </td>
+          <td><span class="badge b-green">Nature</span><span class="badge b-blue">History</span><span class="badge b-coral">Castle</span></td>
+          <td>
+            <div class="book-item"><span class="book-dot required"></span><span><strong>Rental car</strong> — automatic, book 2–3 months ahead. irishcarrentals.ie or discovercars.com</span></div>
+            <div class="book-item"><span class="book-dot recommended"></span><span><strong>Kilkenny Castle</strong> — timed entry recommended in May. heritageireland.ie</span></div>
+            <div class="book-item"><span class="book-dot optional"></span><span>Glendalough visitor centre — walk-in usually fine, arrive early</span></div>
+          </td>
+        </tr>
+        <tr>
+          <td>Sun 4 May</td>
+          <td>Kilkenny → Cork</td>
+          <td>Car · ~2 h (with stop at Cashel)</td>
+          <td>
+            <strong>Morning:</strong> <strong>Rock of Cashel</strong> — dramatic hilltop fortress, one of Ireland's most photographed sites (~45 min from Kilkenny). Allow 1.5 h.<br>
+            <strong>Afternoon:</strong> Arrive Cork · English Market (covered food market) · St Fin Barre's Cathedral<br>
+            <strong>Evening:</strong> Cork food scene — Oliver Plunkett St / Barrack St area
+          </td>
+          <td><span class="badge b-coral">Castle</span><span class="badge b-blue">History</span><span class="badge b-amber">Food</span></td>
+          <td>
+            <div class="book-item"><span class="book-dot recommended"></span><span><strong>Rock of Cashel</strong> — timed tickets available and advised for weekends. heritageireland.ie</span></div>
+            <div class="book-item"><span class="book-dot required"></span><span>Cork hotel — book well ahead; popular weekend destination</span></div>
+            <div class="book-item"><span class="book-dot optional"></span><span>English Market — free entry, walk-in</span></div>
+          </td>
+        </tr>
+        <tr>
+          <td>Mon 5 May</td>
+          <td>Cork (day trips)</td>
+          <td>Car</td>
+          <td>
+            <strong>Morning:</strong> <strong>Blarney Castle</strong> &amp; gardens (~20 min from Cork) · Kiss the Blarney Stone · wander the grounds<br>
+            <strong>Afternoon:</strong> Drive to <strong>Kinsale</strong> (~45 min) — colourful harbour town, Charles Fort, seafood lunch on the harbour
+          </td>
+          <td><span class="badge b-coral">Castle</span><span class="badge b-green">Nature</span><span class="badge b-amber">Food</span></td>
+          <td>
+            <div class="book-item"><span class="book-dot required"></span><span><strong>Blarney Castle</strong> — one of Ireland's most visited sites, queues get very long in May. Pre-book at blarney.com/castle</span></div>
+            <div class="book-item"><span class="book-dot optional"></span><span>Charles Fort (Kinsale) — walk-in, small heritage site</span></div>
+            <div class="book-item"><span class="book-dot recommended"></span><span>Seafood restaurant in Kinsale — book a lunch table (The Bulman, Max's)</span></div>
+          </td>
+        </tr>
+        <tr>
+          <td>Tue 6 May</td>
+          <td>Cork → Killarney</td>
+          <td>Car · ~1.5 h</td>
+          <td>
+            <strong>Scenic drive via N22:</strong> pick up the <strong>Ring of Kerry</strong> scenery heading north<br>
+            <strong>Moll's Gap</strong> viewpoint · <strong>Ladies View</strong> (stunning valley panorama) · <strong>Torc Waterfall</strong><br>
+            <strong>Killarney National Park:</strong> Ross Castle (lakeside) · Muckross House &amp; gardens (free grounds)
+          </td>
+          <td><span class="badge b-green">Nature</span><span class="badge b-teal">Scenic</span><span class="badge b-coral">Castle</span></td>
+          <td>
+            <div class="book-item"><span class="book-dot recommended"></span><span><strong>Ross Castle</strong> — guided-entry only, book ahead for peak dates. heritageireland.ie</span></div>
+            <div class="book-item"><span class="book-dot required"></span><span>Killarney hotel — extremely popular, book months ahead</span></div>
+            <div class="book-item"><span class="book-dot optional"></span><span>Muckross House — gardens free; house tours walk-in or pre-book</span></div>
+          </td>
+        </tr>
+        <tr>
+          <td>Wed 7 May</td>
+          <td>Killarney → Cliffs → Galway</td>
+          <td>Car · ~3.5 h total · Full day</td>
+          <td>
+            <strong>Morning (arrive early!):</strong> <strong>Cliffs of Moher</strong> — Ireland's most iconic sight. Arrive before 9 am to beat tour buses. Walk the clifftop path (€1 km) both north and south.<br>
+            <strong>Afternoon:</strong> Arrive <strong>Galway</strong> (~1.5 h from Cliffs) · Galway Cathedral · Quay St &amp; Latin Quarter<br>
+            <strong>Evening:</strong> Trad music pubs — Monroe's Tavern, The Crane Bar, Tigh Coili
+          </td>
+          <td><span class="badge b-green">Nature</span><span class="badge b-purple">Iconic</span><span class="badge b-teal">Scenic</span></td>
+          <td>
+            <div class="book-item"><span class="book-dot required"></span><span><strong>Cliffs of Moher</strong> — must pre-book timed entry in May. cliffsofmoher.ie. Go early (before 9 am) even with a ticket.</span></div>
+            <div class="book-item"><span class="book-dot required"></span><span>Galway hotel — book well ahead; Galway is very popular</span></div>
+            <div class="book-item"><span class="book-dot optional"></span><span>Pubs — no booking needed, just show up and enjoy</span></div>
+          </td>
+        </tr>
+        <tr>
+          <td>Thu 8 May<br>late night</td>
+          <td>Galway → Dublin ✈</td>
+          <td>Car · ~2 h · Return car at Dublin Airport</td>
+          <td>
+            <strong>Morning:</strong> Salthill promenade walk (15 min from centre) · breakfast in Galway<br>
+            <strong>Midday:</strong> Drive M6/M4 to Dublin (~2 h) — no traffic issues on a Thursday<br>
+            <strong>Afternoon:</strong> Return rental car at Dublin Airport (allow 1 h buffer before check-in)<br>
+            <strong>Late night:</strong> Depart ✈
+          </td>
+          <td><span class="badge b-gray">Departure</span></td>
+          <td>
+            <div class="book-item"><span class="book-dot required"></span><span>Return car same location as pick-up (Dublin Airport) — confirm with rental agency at booking</span></div>
+            <div class="book-item"><span class="book-dot optional"></span><span>Consider airport lounge access for a late departure</span></div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ACCOMMODATION TABLE -->
+  <div class="section-header">
+    <div class="section-number">2</div>
+    <div class="section-title">Accommodation Plan</div>
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Nights</th>
+          <th>City</th>
+          <th>Best Area to Stay</th>
+          <th>Notes</th>
+          <th>Pre-book</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1–3 May (2 nights)</td>
+          <td><strong>Dublin</strong></td>
+          <td>Temple Bar / City Centre / Northside</td>
+          <td>No car needed in Dublin — use Luas tram, DART, and your feet. Pick up car on May 3 morning from Dublin Airport.</td>
+          <td><span class="badge b-coral">Book now</span> Very high demand in May</td>
+        </tr>
+        <tr>
+          <td>3–4 May (1 night)</td>
+          <td><strong>Kilkenny</strong></td>
+          <td>Medieval Mile / High St</td>
+          <td>Compact, walkable city. Free street parking near castle. Nice for an evening stroll.</td>
+          <td><span class="badge b-amber">Book early</span> Limited hotels</td>
+        </tr>
+        <tr>
+          <td>4–6 May (2 nights)</td>
+          <td><strong>Cork</strong></td>
+          <td>City Centre / Douglas / Blarney area</td>
+          <td>Ideal base for Blarney, Kinsale, and Rock of Cashel day trips. Ireland's food capital.</td>
+          <td><span class="badge b-amber">Book early</span></td>
+        </tr>
+        <tr>
+          <td>6–7 May (1 night)</td>
+          <td><strong>Killarney</strong></td>
+          <td>Town Centre</td>
+          <td>Gateway to Ring of Kerry and Killarney National Park. Extremely popular tourist town.</td>
+          <td><span class="badge b-coral">Book now</span> Sells out fast</td>
+        </tr>
+        <tr>
+          <td>7–8 May (1 night)</td>
+          <td><strong>Galway</strong></td>
+          <td>Latin Quarter / near Eyre Square</td>
+          <td>Last night before early drive to Dublin Airport. Check out early on May 8.</td>
+          <td><span class="badge b-coral">Book now</span> Very popular</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- CAR RENTAL -->
+  <div class="section-header">
+    <div class="section-number">3</div>
+    <div class="section-title">Car Rental</div>
+  </div>
+
+  <div class="car-grid">
+    <div class="car-card highlight">
+      <div class="car-label">Pick up</div>
+      <div class="car-value">Dublin Airport</div>
+      <div class="car-sub">Saturday 3 May, morning</div>
+    </div>
+    <div class="car-card highlight">
+      <div class="car-label">Return</div>
+      <div class="car-value">Dublin Airport</div>
+      <div class="car-sub">Thursday 8 May, afternoon</div>
+    </div>
+    <div class="car-card">
+      <div class="car-label">Duration</div>
+      <div class="car-value">~6 days</div>
+      <div class="car-sub">No car needed Days 1–2 in Dublin</div>
+    </div>
+    <div class="car-card">
+      <div class="car-label">Transmission</div>
+      <div class="car-value">Automatic</div>
+      <div class="car-sub">Book 2–3 months ahead — very limited supply in May</div>
+    </div>
+    <div class="car-card">
+      <div class="car-label">Insurance</div>
+      <div class="car-value">SCDW / Super CDW</div>
+      <div class="car-sub">Zero-excess cover — strongly recommended</div>
+    </div>
+    <div class="car-card highlight">
+      <div class="car-label">Estimated cost (6 days auto + SCDW)</div>
+      <div class="car-value">~€350–500</div>
+      <div class="car-sub">~€55–85/day all-in</div>
+    </div>
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Item</th><th>Details</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Recommended providers</td>
+          <td>Irish Car Rentals <em>(irishcarrentals.ie)</em>, NewWay at Dublin Airport, Europcar, DiscoverCars.com for price comparison</td>
+        </tr>
+        <tr>
+          <td>Automatic availability</td>
+          <td>Very limited — automatics cost ~3× manual price and sell out quickly in May. Book immediately after finalising travel dates.</td>
+        </tr>
+        <tr>
+          <td>Insurance to buy</td>
+          <td><strong>SCDW (Super Collision Damage Waiver)</strong> = zero excess. Do NOT skip. CDW alone leaves €1,500–3,000 deductible. Roads are narrow and challenging for visitors.</td>
+        </tr>
+        <tr>
+          <td>Driver's licence</td>
+          <td>Ukrainian licence is valid in Ireland. Some agencies require an International Driving Permit (IDP) — check when booking. Carry both to be safe.</td>
+        </tr>
+        <tr>
+          <td>Driving tips</td>
+          <td>Drive on the <strong>left</strong> · Narrow country roads — take it slow · Google Maps / Apple CarPlay works well · M50 tolls billed automatically by rental agency · No toll tag needed for most routes</td>
+        </tr>
+        <tr>
+          <td>Northern Ireland</td>
+          <td>Do NOT cross into Northern Ireland — it requires a UK visa. All sights in this itinerary are in the Republic only.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- TIPS -->
+  <div class="section-header">
+    <div class="section-number">4</div>
+    <div class="section-title">Travel Tips &amp; Essentials</div>
+  </div>
+
+  <div class="tips-box">
+    <h4>Entry requirements (Ukrainians)</h4>
+    <ul>
+      <li>Valid biometric passport — mandatory</li>
+      <li>No visa needed for up to 90 days in the Republic</li>
+      <li>Travel health insurance required</li>
+      <li>Return / onward ticket proof required at border</li>
+      <li>Northern Ireland = UK visa required — itinerary avoids it entirely</li>
+    </ul>
+  </div>
+
+  <div class="tips-box">
+    <h4>Practical tips</h4>
+    <ul>
+      <li>May weather: expect 10–16 °C, sunny spells and rain showers — bring a waterproof layer</li>
+      <li>Cash is useful for small pubs and market stalls; cards accepted almost everywhere</li>
+      <li>Heritage Ireland Card (€40 per person) covers Rock of Cashel, Kilkenny Castle, Ross Castle &amp; more — great value for this itinerary</li>
+      <li>Fuel: petrol ~€1.75/L — budget ~€80–100 in fuel for the full loop</li>
+      <li>Phone data: EU roaming applies if you have an EU SIM; otherwise buy an Irish SIM at Dublin Airport</li>
+      <li>Tipping: ~10–15% in restaurants; not obligatory in pubs</li>
+    </ul>
+  </div>
+
+</div>
+
+<footer>
+  <strong>Ireland Trip · May 2025</strong> · Itinerary for two · Republic of Ireland only<br>
+  <span style="font-size:11px">Visa information correct as of 2025 · Always verify entry requirements before travel</span>
+</footer>
+
+</body>
+</html>
