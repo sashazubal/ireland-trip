@@ -97,6 +97,13 @@ td strong { font-weight: 500; color: var(--green-deep); }
 .leg-item { display: flex; align-items: center; gap: 5px; }
 .leg-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
 
+/* SCHEDULE ITEMS */
+.sched-list { padding: 0; }
+.sched-item { display: flex; gap: 7px; margin: 3px 0; font-size: 13px; align-items: flex-start; line-height: 1.5; }
+.sched-time { font-size: 11px; font-weight: 500; white-space: nowrap; min-width: 40px; margin-top: 2px; background: var(--green-light); color: var(--green-mid); border-radius: 3px; padding: 1px 5px; flex-shrink: 0; font-variant-numeric: tabular-nums; }
+.sched-time.t-warn { background: #fef3c7; color: var(--amber); }
+.sched-time.t-key { background: var(--purple-light); color: var(--purple); }
+
 /* CAR CARDS */
 .car-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 12px; margin: 1rem 0 1.5rem; }
 .car-card { background: #fff; border: 1px solid var(--border); border-radius: 10px; padding: 12px 14px; }
@@ -253,6 +260,7 @@ footer strong { color: rgba(255,255,255,0.8); }
         </tr>
       </thead>
       <tbody>
+        <!-- DAY 0: Arrival -->
         <tr>
           <td>Fri 1 May<br>late night</td>
           <td>Dublin<br><small style="color:var(--text-muted)">Check in</small></td>
@@ -269,15 +277,24 @@ footer strong { color: rgba(255,255,255,0.8); }
             <div class="book-item"><span class="book-dot optional"></span><span>Airlink bus ticket (€7.50, pay onboard)</span></div>
           </td>
         </tr>
+        <!-- DAY 1: Dublin -->
         <tr>
           <td>Sat 2 May</td>
           <td>Dublin</td>
           <td>On foot / Luas tram / DART</td>
           <td>
-            <strong>Morning:</strong> Trinity College &amp; Book of Kells · Dublin Castle · Chester Beatty Library (free)<br>
-            <strong>Afternoon:</strong> Temple Bar &amp; Liffey walk · <strong>Guinness Storehouse @ 16:00</strong> 🍺<br>
-            <strong>Evening:</strong> Live trad music in a pub (The Temple Bar, Mulligan's)
-            <br><small style="color:var(--green-mid)">✓ Book of Kells open daily · ✓ Guinness Storehouse open Sat 9:30am–8pm (best day — longest hours)</small>
+            <div class="sched-list">
+              <div class="sched-item"><span class="sched-time">09:00</span><span>Leave hotel, breakfast nearby</span></div>
+              <div class="sched-item"><span class="sched-time">09:30</span><span><strong>Trinity College &amp; Book of Kells</strong> — arrive at opening to beat queues. Pre-booked timed slot essential. Allow 1.5 h</span></div>
+              <div class="sched-item"><span class="sched-time">11:00</span><span><strong>Dublin Castle</strong> guided tour (on the hour, ~1 h) + <strong>Chester Beatty Library</strong> inside the grounds (free, 45 min)</span></div>
+              <div class="sched-item"><span class="sched-time">13:00</span><span>Lunch near Temple Bar — Fallon &amp; Byrne, Grogan's, or The Church</span></div>
+              <div class="sched-item"><span class="sched-time">14:30</span><span><strong>Temple Bar</strong> streets · Ha'penny Bridge · Liffey walk</span></div>
+              <div class="sched-item"><span class="sched-time">15:30</span><span>Head toward St James's Gate (Luas Red Line or 20 min walk)</span></div>
+              <div class="sched-item"><span class="sched-time t-key">16:00</span><span><strong>Guinness Storehouse</strong> ✅ booked — head up to the Gravity Bar early before it fills. Allow 2–2.5 h</span></div>
+              <div class="sched-item"><span class="sched-time">18:30</span><span>Dinner in the Liberties / Thomas St area (near Guinness)</span></div>
+              <div class="sched-item"><span class="sched-time">20:30</span><span>Live trad music — The Temple Bar, Mulligan's, or O'Donoghue's on Merrion Row</span></div>
+            </div>
+            <small style="color:var(--green-mid)">✓ Book of Kells open daily · ✓ Guinness Storehouse open Sat 9:30am–8pm (best day — longest hours)</small>
           </td>
           <td><span class="badge b-blue">History</span><span class="badge b-teal">Culture</span><span class="badge b-amber">Food</span></td>
           <td>
@@ -286,14 +303,24 @@ footer strong { color: rgba(255,255,255,0.8); }
             <div class="book-item"><span class="book-dot optional"></span><span>Dublin Castle — walk-in fine but guided tour worth booking</span></div>
           </td>
         </tr>
+        <!-- DAY 2: Dublin → Glendalough → Kilkenny -->
         <tr>
           <td>Sun 3 May</td>
           <td>Dublin → Kilkenny</td>
-          <td><strong>Pick up car</strong> at Dublin Airport (morning) · Drive ~2.5 h with stop</td>
+          <td><strong>Pick up car</strong> Dublin Airport (08:30) · Drive ~3 h with Glendalough stop</td>
           <td>
-            <strong>En route (~1 h from Dublin):</strong> <strong>Glendalough</strong> — early Christian monastic valley in Wicklow Mountains. Walk the lake loop (2–3 h).<br>
-            <strong>Afternoon:</strong> Arrive Kilkenny · Kilkenny Castle · <a href="http://kilkennycitytours.com/blog/wp-content/uploads/2017/05/Medieval-Mile-City-Map-2017.pdf" target="_blank" style="color:var(--green-mid);text-decoration:underline">Medieval Mile walking tour 🗺</a> · Black Abbey
-            <br><small style="color:var(--green-mid)">✓ Glendalough open daily 9:30am–6pm · ✓ Kilkenny Castle open 7 days/week 9:30am–5:30pm</small>
+            <div class="sched-list">
+              <div class="sched-item"><span class="sched-time t-warn">07:30</span><span>Check out EasyHotel · taxi or Airlink 747 to Dublin Airport (~35 min)</span></div>
+              <div class="sched-item"><span class="sched-time t-key">08:30</span><span><strong>Pick up rental car</strong> at Dublin Airport — allow extra time for paperwork</span></div>
+              <div class="sched-item"><span class="sched-time">09:15</span><span>Depart Dublin Airport — M50 south, M11/N11 toward Wicklow</span></div>
+              <div class="sched-item"><span class="sched-time">10:30</span><span><strong>Glendalough</strong> — Upper Lake loop walk (3 km, ~1 h easy) + Monastic City ruins. Stunning valley even on a cloudy day. Allow 2.5 h</span></div>
+              <div class="sched-item"><span class="sched-time">13:00</span><span>Depart Glendalough — R756 west, N81 south, join M9 toward Kilkenny</span></div>
+              <div class="sched-item"><span class="sched-time">14:30</span><span>Arrive Kilkenny · drop bags at <strong>Launard House</strong> (Kells Rd)</span></div>
+              <div class="sched-item"><span class="sched-time">15:00</span><span><strong>Kilkenny Castle</strong> — timed tickets on arrival. Allow 1 h. Closes 17:30</span></div>
+              <div class="sched-item"><span class="sched-time">16:30</span><span><strong>Medieval Mile walk</strong> — High St · Rothe House · St Mary's Medieval Mile Museum · <strong>Black Abbey</strong></span></div>
+              <div class="sched-item"><span class="sched-time">19:30</span><span>Dinner in Kilkenny — Campagne, Zuni, or Kyteler's Inn (medieval haunted pub!)</span></div>
+            </div>
+            <small style="color:var(--green-mid)">✓ Glendalough open daily 9:30am–6pm · ✓ Kilkenny Castle open 7 days/week 9:30am–5:30pm</small>
           </td>
           <td><span class="badge b-green">Nature</span><span class="badge b-blue">History</span><span class="badge b-coral">Castle</span></td>
           <td>
@@ -302,15 +329,23 @@ footer strong { color: rgba(255,255,255,0.8); }
             <div class="book-item"><span class="book-dot optional"></span><span>Glendalough visitor centre — walk-in usually fine, arrive early</span></div>
           </td>
         </tr>
+        <!-- DAY 3: Kilkenny → Rock of Cashel → Cork -->
         <tr>
           <td>Mon 4 May</td>
           <td>Kilkenny → Cork</td>
-          <td>Car · ~2 h (with stop at Cashel)</td>
+          <td>Car · Depart 08:30 · ~2.5 h total with Rock of Cashel stop</td>
           <td>
-            <strong>Morning:</strong> <strong>Rock of Cashel</strong> — dramatic hilltop fortress, one of Ireland's most photographed sites (~45 min from Kilkenny). Allow 1.5 h.<br>
-            <strong>Afternoon:</strong> Arrive Cork · English Market (covered food market) · St Fin Barre's Cathedral<br>
-            <strong>Evening:</strong> Cork food scene — Oliver Plunkett St / Barrack St area
-            <br><small style="color:var(--green-mid)">✓ Rock of Cashel open Mon–Sun 9am–5:30pm · ✓ English Market open Mon–Sat</small>
+            <div class="sched-list">
+              <div class="sched-item"><span class="sched-time t-warn">08:30</span><span>Check out Launard House · depart for Rock of Cashel (N76/M9 south then N74 west, ~45 min)</span></div>
+              <div class="sched-item"><span class="sched-time">09:15</span><span><strong>Rock of Cashel</strong> — arrive early, tour buses don't start until 10:30+. Walk the full circuit of the hilltop fortress. Allow 1.5–2 h</span></div>
+              <div class="sched-item"><span class="sched-time">11:15</span><span>Depart Rock of Cashel — N8/M8 south to Cork (~1 h 20 min)</span></div>
+              <div class="sched-item"><span class="sched-time">13:00</span><span>Arrive Cork · check in <strong>Lancaster Lodge</strong> (free parking on Western Rd)</span></div>
+              <div class="sched-item"><span class="sched-time">13:30</span><span><strong>English Market</strong> (10 min walk) — grazing lunch: farmhouse cheese, charcuterie, fresh fish. Open until 18:00</span></div>
+              <div class="sched-item"><span class="sched-time">15:00</span><span><strong>St Fin Barre's Cathedral</strong> — French Gothic exterior, gorgeous interior. ~45 min</span></div>
+              <div class="sched-item"><span class="sched-time">16:00</span><span>Explore <strong>Oliver Plunkett St</strong> and Grand Parade — Cork's main shopping and café strip</span></div>
+              <div class="sched-item"><span class="sched-time">19:30</span><span>Dinner on <strong>Barrack St</strong> — Nash 19, Paradiso (Cork's legendary vegetarian), or Farmgate Restaurant</span></div>
+            </div>
+            <small style="color:var(--green-mid)">✓ Rock of Cashel open Mon–Sun 9am–5:30pm · ✓ English Market open Mon–Sat</small>
           </td>
           <td><span class="badge b-coral">Castle</span><span class="badge b-blue">History</span><span class="badge b-amber">Food</span></td>
           <td>
@@ -319,14 +354,24 @@ footer strong { color: rgba(255,255,255,0.8); }
             <div class="book-item"><span class="book-dot optional"></span><span>English Market — free entry, walk-in</span></div>
           </td>
         </tr>
+        <!-- DAY 4: Cork → Blarney → Kinsale → Cork -->
         <tr>
           <td>Tue 5 May</td>
           <td>Cork (day trips)</td>
-          <td>Car</td>
+          <td>Car · Day loop ~100 km · Return to Cork</td>
           <td>
-            <strong>Morning:</strong> <strong>Blarney Castle</strong> &amp; gardens (~20 min from Cork) · Kiss the Blarney Stone · wander the grounds<br>
-            <strong>Afternoon:</strong> Drive to <strong>Kinsale</strong> (~45 min) — colourful harbour town, Charles Fort, seafood lunch on the harbour
-            <br><small style="color:var(--green-mid)">✓ Blarney Castle open Tue 9am–6pm · ✓ Charles Fort open daily</small>
+            <div class="sched-list">
+              <div class="sched-item"><span class="sched-time t-key">09:00</span><span>Depart Cork for <strong>Blarney Castle</strong> (~20 min via N20/R617) — arrive at opening to beat stone queues</span></div>
+              <div class="sched-item"><span class="sched-time">09:20</span><span><strong>Blarney Castle &amp; grounds</strong> — climb the tower, kiss the stone, Poison Garden, Rock Close. Queues build fast by 10:30 — 09:20 arrival means near-zero wait. Allow 2–2.5 h</span></div>
+              <div class="sched-item"><span class="sched-time">11:30</span><span>Depart Blarney for Kinsale (~45 min via N27/R600)</span></div>
+              <div class="sched-item"><span class="sched-time">12:15</span><span>Arrive <strong>Kinsale</strong></span></div>
+              <div class="sched-item"><span class="sched-time">12:30</span><span>Seafood lunch on the harbour — <strong>The Bulman</strong> (Summercove, harbour views) or <strong>Max's Wine Bar</strong>. Pre-book a table</span></div>
+              <div class="sched-item"><span class="sched-time">14:00</span><span><strong>Charles Fort</strong> — 10 min walk from town. Star-shaped 17th-c fort on the cliff edge. ~1 h walk</span></div>
+              <div class="sched-item"><span class="sched-time">15:15</span><span>Stroll Kinsale town — colourful shopfronts, Market Quay, harbour</span></div>
+              <div class="sched-item"><span class="sched-time">16:00</span><span>Depart Kinsale for Cork (~45 min) · rest at Lancaster Lodge</span></div>
+              <div class="sched-item"><span class="sched-time">19:30</span><span>Cork evening — Crane Lane Theatre for live music, or dinner at The Farmgate Café</span></div>
+            </div>
+            <small style="color:var(--green-mid)">✓ Blarney Castle open Tue 9am–6pm · ✓ Charles Fort open daily</small>
           </td>
           <td><span class="badge b-coral">Castle</span><span class="badge b-green">Nature</span><span class="badge b-amber">Food</span></td>
           <td>
@@ -335,15 +380,25 @@ footer strong { color: rgba(255,255,255,0.8); }
             <div class="book-item"><span class="book-dot recommended"></span><span>Seafood restaurant in Kinsale — book a lunch table (The Bulman, Max's)</span></div>
           </td>
         </tr>
+        <!-- DAY 5: Cork → Scenic N71 → Killarney -->
         <tr>
           <td>Wed 6 May</td>
           <td>Cork → Killarney</td>
-          <td>Car · ~1.5 h</td>
+          <td>Car · Depart 09:00 · Scenic N71 via Kenmare · ~3 h driving + stops</td>
           <td>
-            <strong>Scenic drive via N22:</strong> pick up the <strong>Ring of Kerry</strong> scenery heading north<br>
-            <strong>Moll's Gap</strong> viewpoint · <strong>Ladies View</strong> (stunning valley panorama) · <strong>Torc Waterfall</strong><br>
-            <strong>Killarney National Park:</strong> Ross Castle (lakeside) · Muckross House &amp; gardens (free grounds)
-            <br><small style="color:var(--green-mid)">✓ Ross Castle open daily 9:30am–5:45pm · ✓ Muckross grounds free, open daily</small>
+            <div class="sched-list">
+              <div class="sched-item"><span class="sched-time t-warn">09:00</span><span>Check out Lancaster Lodge · depart Cork via N22 west toward Macroom, then R569 south to Kenmare — skip the direct N22; the Kenmare loop is far more scenic</span></div>
+              <div class="sched-item"><span class="sched-time">10:45</span><span><strong>Kenmare</strong> — charming market town. Quick 20 min stop: coffee, stretch, browse the colourful main street</span></div>
+              <div class="sched-item"><span class="sched-time">11:15</span><span>Depart Kenmare north on <strong>N71</strong> — the most scenic road in Ireland</span></div>
+              <div class="sched-item"><span class="sched-time">11:45</span><span><strong>Moll's Gap</strong> viewpoint — pull over for panoramic views of MacGillycuddy's Reeks. 15 min photo stop</span></div>
+              <div class="sched-item"><span class="sched-time">12:05</span><span><strong>Ladies View</strong> (~10 min drive) — arguably Ireland's most beautiful valley panorama. Named because Queen Victoria's ladies-in-waiting were awestruck here. 20 min</span></div>
+              <div class="sched-item"><span class="sched-time">12:30</span><span><strong>Torc Waterfall</strong> (~15 min drive) — 5 min walk from car park to a gorgeous 20 m cascade in the forest</span></div>
+              <div class="sched-item"><span class="sched-time">13:00</span><span>Arrive <strong>Killarney</strong> · check in <strong>Wheatfield House</strong></span></div>
+              <div class="sched-item"><span class="sched-time t-key">14:30</span><span><strong>Ross Castle</strong> — lakeside tower house. Tickets on-site only, cannot pre-book. Arrive by 14:30 for a guided tour slot. Last entry ~17:15. Allow 1 h</span></div>
+              <div class="sched-item"><span class="sched-time">16:00</span><span><strong>Muckross House &amp; gardens</strong> (2 km from Ross Castle) — grounds free and beautiful for a lake walk. House tours walk-in</span></div>
+              <div class="sched-item"><span class="sched-time">17:30</span><span>Return to Killarney town · dinner at Treyvaud's or The Strawberry Tree</span></div>
+            </div>
+            <small style="color:var(--green-mid)">✓ Ross Castle open daily 9:30am–5:45pm · ✓ Muckross grounds free, open daily</small>
           </td>
           <td><span class="badge b-green">Nature</span><span class="badge b-teal">Scenic</span><span class="badge b-coral">Castle</span></td>
           <td>
@@ -352,15 +407,27 @@ footer strong { color: rgba(255,255,255,0.8); }
             <div class="book-item"><span class="book-dot optional"></span><span>Muckross House — gardens free; house tours walk-in or pre-book</span></div>
           </td>
         </tr>
+        <!-- DAY 6: Killarney → Cliffs of Moher → Galway -->
         <tr>
           <td>Thu 7 May</td>
           <td>Killarney → Cliffs → Galway</td>
-          <td>Car · ~3.5 h total · Full day</td>
+          <td>Car · ⚠ Depart 06:00 · ~3.5 h total · Full day</td>
           <td>
-            <strong>Morning (arrive early!):</strong> <strong>Cliffs of Moher</strong> — Ireland's most iconic sight. Arrive before 9 am to beat tour buses. Walk the clifftop path (1 km) both north and south.<br>
-            <strong>Afternoon:</strong> Arrive <strong>Galway</strong> (~1.5 h from Cliffs) · Galway Cathedral · Quay St &amp; Latin Quarter<br>
-            <strong>Evening:</strong> Trad music pubs — Monroe's Tavern, The Crane Bar, Tigh Coili
-            <br><small style="color:var(--green-mid)">✓ Cliffs of Moher open Thu 8am–9pm in May</small>
+            <div class="sched-list">
+              <div class="sched-item"><span class="sched-time t-warn">05:30</span><span>⚠ Early wake-up — set two alarms. Most important timing of the whole trip</span></div>
+              <div class="sched-item"><span class="sched-time t-warn">06:00</span><span>Depart Killarney — N21 toward Limerick, then N18 north through Ennis, R476/R478 to Cliffs (~2.5 h)</span></div>
+              <div class="sched-item"><span class="sched-time t-key">08:30</span><span><strong>Arrive Cliffs of Moher</strong> — pre-booked timed entry. Tour buses don't arrive until 10:00–10:30, so you'll have the clifftops nearly to yourselves</span></div>
+              <div class="sched-item"><span class="sched-time">08:30</span><span>Walk <strong>south first</strong> toward Hag's Head (less crowded, dramatic) — then back north past the visitor centre to <strong>O'Brien's Tower</strong>. Allow 2 h at your own pace</span></div>
+              <div class="sched-item"><span class="sched-time">10:30</span><span>Depart Cliffs for Galway — N67/N18 via Ennis (~1 h 20 min)</span></div>
+              <div class="sched-item"><span class="sched-time">12:00</span><span>Arrive <strong>Galway</strong> · check in <strong>Travelodge Plus</strong> (Tuam Rd)</span></div>
+              <div class="sched-item"><span class="sched-time">13:00</span><span>Lunch near the <strong>Spanish Arch</strong> — great spots along Quay St</span></div>
+              <div class="sched-item"><span class="sched-time">14:30</span><span><strong>Galway Cathedral</strong> (free, impressive neo-Romanesque dome) · 30 min</span></div>
+              <div class="sched-item"><span class="sched-time">15:15</span><span><strong>Latin Quarter</strong> — Shop St, Quay St, Kirwan's Lane. Galway's best indie shops and galleries</span></div>
+              <div class="sched-item"><span class="sched-time">16:30</span><span><strong>Spanish Arch</strong> and riverside walk along the Corrib — photogenic at golden hour</span></div>
+              <div class="sched-item"><span class="sched-time">19:30</span><span>Dinner in Galway — Ard Bia, Kai, or The Galway Hooker</span></div>
+              <div class="sched-item"><span class="sched-time t-key">21:00</span><span>Live trad music — <strong>The Crane Bar</strong> (best authentic sessions in Galway), Monroe's Tavern, or Tigh Coilí on Mainguard St</span></div>
+            </div>
+            <small style="color:var(--green-mid)">✓ Cliffs of Moher open Thu 8am–9pm in May</small>
           </td>
           <td><span class="badge b-green">Nature</span><span class="badge b-purple">Iconic</span><span class="badge b-teal">Scenic</span></td>
           <td>
@@ -369,15 +436,22 @@ footer strong { color: rgba(255,255,255,0.8); }
             <div class="book-item"><span class="book-dot optional"></span><span>Pubs — no booking needed, just show up and enjoy</span></div>
           </td>
         </tr>
+        <!-- DAY 7: Galway → Dublin Airport → Departure -->
         <tr>
-          <td>Fri 8 May<br>late night</td>
+          <td>Fri 8 May<br>departure</td>
           <td>Galway → Dublin ✈</td>
-          <td>Car · ~2 h · Return car at Dublin Airport</td>
+          <td>Car · ⚠ Depart 12:00 · ~2.5 h to Dublin Airport · Return car</td>
           <td>
-            <strong>Morning:</strong> Salthill promenade walk (15 min from centre) · breakfast in Galway<br>
-            <strong>⚠ Leave Galway by 13:00</strong> — drive M6/M4 to Dublin (~2 h)<br>
-            <strong>~15:00:</strong> Return rental car at Dublin Airport (allow extra buffer)<br>
-            <strong>✈ FR 862</strong> Dublin (DUB) → Rzeszów (RZE) · Dep <strong>18:00</strong> · Arr <strong>22:00</strong><br>
+            <div class="sched-list">
+              <div class="sched-item"><span class="sched-time">08:30</span><span>Check out Travelodge</span></div>
+              <div class="sched-item"><span class="sched-time">09:00</span><span><strong>Salthill Promenade</strong> (15 min from centre) — traditional to kick the wall at the end of the prom! Breakfast at a Salthill café</span></div>
+              <div class="sched-item"><span class="sched-time">10:30</span><span>Final stroll through Galway city — last souvenirs, coffee</span></div>
+              <div class="sched-item"><span class="sched-time t-warn">11:30</span><span>⛽ <strong>Fill up the rental car with petrol</strong> — car must be returned full or penalty charge applies</span></div>
+              <div class="sched-item"><span class="sched-time t-warn">12:00</span><span>⚠ <strong>Depart Galway</strong> via M6/M4 east toward Dublin — do not leave later than 12:00 to allow buffer for traffic near Dublin</span></div>
+              <div class="sched-item"><span class="sched-time">14:30</span><span>Arrive Dublin Airport · return rental car (allow 20–30 min for drop-off + shuttle to terminal)</span></div>
+              <div class="sched-item"><span class="sched-time">15:30</span><span>Check in for FR 862 · bag drop · security</span></div>
+              <div class="sched-item"><span class="sched-time t-key">18:00</span><span><strong>✈ FR 862</strong> Dublin (DUB) → Rzeszów (RZE) · Dep <strong>18:00</strong> · Arr <strong>22:00</strong></span></div>
+            </div>
             <small style="color:var(--text-muted)">Reservation: <strong>NT3R2F</strong> · Sasha seat 23B · Solya seat 23A · Priority + 2 cabin bags each</small>
           </td>
           <td><span class="badge b-gray">Departure</span></td>
