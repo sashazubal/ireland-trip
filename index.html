@@ -275,7 +275,7 @@ footer strong { color: rgba(255,255,255,0.8); }
           <td>On foot / Luas tram / DART</td>
           <td>
             <strong>Morning:</strong> Trinity College &amp; Book of Kells · Dublin Castle · Chester Beatty Library (free)<br>
-            <strong>Afternoon:</strong> Temple Bar &amp; Liffey walk · Guinness Storehouse<br>
+            <strong>Afternoon:</strong> Temple Bar &amp; Liffey walk · <strong>Guinness Storehouse @ 16:00</strong> 🍺<br>
             <strong>Evening:</strong> Live trad music in a pub (The Temple Bar, Mulligan's)
             <br><small style="color:var(--green-mid)">✓ Book of Kells open daily · ✓ Guinness Storehouse open Sat 9:30am–8pm (best day — longest hours)</small>
           </td>
@@ -695,13 +695,13 @@ footer strong { color: rgba(255,255,255,0.8); }
 // ── Default expenses (pre-populated planning data) ──────────────────────────
 const DEFAULT_EXPENSES = [
   { id: 1, date: '1–3 May', desc: 'Dublin — EasyHotel City Centre, 2 nights (Airbnb, Daire Dunne) ✅ paid', cat: '🏨 Hotel', payer: 'Sasha', amount: 465 },
-  { id: 13, date: '1 &amp; 8 May', desc: 'Ryanair flights ×2 — FR 863 &amp; FR 862, RZE↔DUB, res. NT3R2F (1716.39 PLN = €405)', cat: '✈ Flights', payer: 'Sasha', amount: 405 },
+  { id: 13, date: '1 &amp; 8 May', desc: 'Ryanair flights ×2 — FR 863 &amp; FR 862, RZE↔DUB, res. NT3R2F (1716.39 PLN = €405)', cat: '✈ Flights', payer: 'Solya', amount: 405 },
   { id: 2, date: '3–4 May', desc: 'Kilkenny — Launard House, 1 night (Booking.com, pay at property)', cat: '🏨 Hotel', payer: 'Sasha', amount: 120 },
   { id: 3, date: '4–6 May', desc: 'Cork — Lancaster Lodge, 2 nights, free parking (Booking.com, pay at property)', cat: '🏨 Hotel', payer: 'Sasha', amount: 408 },
   { id: 4, date: '6–7 May', desc: 'Killarney — Wheatfield House, 1 night ✅ booked (Airbnb, Solya)', cat: '🏨 Hotel', payer: 'Solya', amount: 128 },
   { id: 5, date: '7–8 May', desc: 'Galway — Travelodge Plus, 1 night (Booking.com, pay at property)', cat: '🏨 Hotel', payer: 'Sasha', amount: 177 },
   { id: 6, date: '3–8 May', desc: 'Car rental — automatic + SCDW (6 days)', cat: '🚗 Car rental', payer: 'Solya', amount: null },
-  { id: 7, date: '2 May',   desc: 'Guinness Storehouse tickets ×2 ✅ booked (tickets in Gmail)', cat: '🎟 Attraction', payer: null, amount: 60 },
+  { id: 7, date: '2 May',   desc: 'Guinness Storehouse tickets ×2 ✅ booked (tickets in Gmail)', cat: '🎟 Attraction', payer: 'Sasha', amount: 60 },
   { id: 8, date: '2 May',   desc: 'Book of Kells / Trinity College ×2', cat: '🎟 Attraction', payer: null, amount: null },
   { id: 9, date: '5 May',   desc: 'Blarney Castle tickets ×2', cat: '🎟 Attraction', payer: null, amount: null },
   { id: 10, date: '7 May',  desc: 'Cliffs of Moher tickets ×2', cat: '🎟 Attraction', payer: null, amount: null },
